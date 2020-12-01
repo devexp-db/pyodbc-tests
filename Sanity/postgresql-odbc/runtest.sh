@@ -36,7 +36,7 @@ PGDATA="/var/lib/pgsql/data"
 
 rlJournalStart
     rlPhaseStartSetup "General Setup"
-        rlRun "rlImport postgresql/basic"
+        rlRun "rlImport database/postgresql"
         PACKAGES="$PACKAGE unixODBC postgresql-odbc ${postgresqlPackagePrefix}postgresql-server";
         for PACKAGE in $PACKAGES; do
             rlAssertRpm $PACKAGE;

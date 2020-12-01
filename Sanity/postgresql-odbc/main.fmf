@@ -8,6 +8,7 @@ component:
 - postgresql
 test: ./runtest.sh
 framework: beakerlib
+require: library(database/postgresql)
 recommend:
 - python3-pyodbc
 - unixODBC
